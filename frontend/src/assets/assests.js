@@ -13,9 +13,12 @@ import hero_img from './hero_img.png'
 import exchange_icon from './arrow-right-arrow-left-solid.svg'
 import quality_icon from './star-regular.svg'
 import support_icon from './headphones-solid.svg'
-
+import dropdown_icon from './arrow-right-arrow-left-solid.svg'
 export const assets = {
     p_img1,
+    p_img2,
+    p_img3,
+    p_img4,
     cross_icon,
     search_icon,
     profile_icon,
@@ -24,7 +27,8 @@ export const assets = {
     hero_img,
     support_icon,
     exchange_icon,
-    quality_icon
+    quality_icon,
+    dropdown_icon
 }
 
 
@@ -35,7 +39,7 @@ export const products = [
         description:"A powerful stone used to regulate energy",
         price:1000,
         image:[p_img1],
-        category:"Rudraksh",
+        category:"WoMen",
         subCategory:"Topwear",
         sizes:["S" ,"M" ,"L"],
         date:153275729564,
@@ -46,9 +50,33 @@ export const products = [
         name:"Rudraksh Beads",
         description:"A powerful stone used to regulate energy",
         price:1000,
-        image:[p_img1,p_img2,p_img3,p_img4],
-        category:"Rudraksh",
+        image:[p_img2],
+        category:"Men",
         subCategory:"Topwear",
+        sizes:["S" ,"M" ,"L"],
+        date:153275729564,
+        bestseller:true
+    },
+    {
+        _id:"aaaba",
+        name:"Rudraksh Beads",
+        description:"A powerful stone used to regulate energy",
+        price:1000,
+        image:[p_img1],
+        category:"WoMen",
+        subCategory:"Topwear",
+        sizes:["S" ,"M" ,"L"],
+        date:153275729564,
+        bestseller:false
+    },
+    {
+        _id:"aaaba",
+        name:"Rudraksh Beads",
+        description:"A powerful stone used to regulate energy",
+        price:1000,
+        image:[p_img3],
+        category:"Kids",
+        subCategory:"Bottomwear",
         sizes:["S" ,"M" ,"L"],
         date:153275729564,
         bestseller:true
@@ -69,10 +97,10 @@ export const products = [
         _id:"aaaba",
         name:"Rudraksh Beads",
         description:"A powerful stone used to regulate energy",
-        price:1000,
+        price:10,
         image:[p_img1,p_img2,p_img3,p_img4],
-        category:"Rudraksh",
-        subCategory:"Topwear",
+        category:"Women",
+        subCategory:"Winterwear",
         sizes:["S" ,"M" ,"L"],
         date:153275729564,
         bestseller:true
@@ -81,7 +109,19 @@ export const products = [
         _id:"aaaba",
         name:"Rudraksh Beads",
         description:"A powerful stone used to regulate energy",
-        price:1000,
+        price:10,
+        image:[p_img1,p_img2,p_img3,p_img4],
+        category:"Rudraksh",
+        subCategory:"Winterwear",
+        sizes:["S" ,"M" ,"L"],
+        date:153275729564,
+        bestseller:true
+    },
+    {
+        _id:"aaaba",
+        name:"Rudraksh Beads",
+        description:"A powerful stone used to regulate energy",
+        price:100,
         image:[p_img1,p_img2,p_img3,p_img4],
         category:"Rudraksh",
         subCategory:"Topwear",
@@ -93,43 +133,7 @@ export const products = [
         _id:"aaaba",
         name:"Rudraksh Beads",
         description:"A powerful stone used to regulate energy",
-        price:1000,
-        image:[p_img1,p_img2,p_img3,p_img4],
-        category:"Rudraksh",
-        subCategory:"Topwear",
-        sizes:["S" ,"M" ,"L"],
-        date:153275729564,
-        bestseller:true
-    },
-    {
-        _id:"aaaba",
-        name:"Rudraksh Beads",
-        description:"A powerful stone used to regulate energy",
-        price:1000,
-        image:[p_img1,p_img2,p_img3,p_img4],
-        category:"Rudraksh",
-        subCategory:"Topwear",
-        sizes:["S" ,"M" ,"L"],
-        date:153275729564,
-        bestseller:true
-    },
-    {
-        _id:"aaaba",
-        name:"Rudraksh Beads",
-        description:"A powerful stone used to regulate energy",
-        price:1000,
-        image:[p_img1,p_img2,p_img3,p_img4],
-        category:"Rudraksh",
-        subCategory:"Topwear",
-        sizes:["S" ,"M" ,"L"],
-        date:153275729564,
-        bestseller:false
-    },
-    {
-        _id:"aaaba",
-        name:"Rudraksh Beads",
-        description:"A powerful stone used to regulate energy",
-        price:1000,
+        price:100,
         image:[p_img1,p_img2,p_img3,p_img4],
         category:"Rudraksh",
         subCategory:"Topwear",
