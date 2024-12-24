@@ -14,6 +14,11 @@ import exchange_icon from './arrow-right-arrow-left-solid.svg'
 import quality_icon from './star-regular.svg'
 import support_icon from './headphones-solid.svg'
 import dropdown_icon from './arrow-right-arrow-left-solid.svg'
+import star_dull_icon from './star-regular (2).svg'
+import star_icon from './star-solid (1).svg'
+import bin_icon from './trash-solid.svg'
+import stripe_logo from './stripe.png'
+import razorpay_logo from './Razorpay_logo.webp'
 export const assets = {
     p_img1,
     p_img2,
@@ -28,7 +33,12 @@ export const assets = {
     support_icon,
     exchange_icon,
     quality_icon,
-    dropdown_icon
+    dropdown_icon,
+    star_icon ,
+    star_dull_icon ,
+    bin_icon,
+    stripe_logo,
+    razorpay_logo,
 }
 
 
