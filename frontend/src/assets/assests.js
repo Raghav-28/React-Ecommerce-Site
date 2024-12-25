@@ -19,6 +19,8 @@ import star_icon from './star-solid (1).svg'
 import bin_icon from './trash-solid.svg'
 import stripe_logo from './stripe.png'
 import razorpay_logo from './Razorpay_logo.webp'
+import contact_img from './contact-us-image.jpg'
+import about_img from './about_us.jpg'
 export const assets = {
     p_img1,
     p_img2,
@@ -39,6 +41,8 @@ export const assets = {
     bin_icon,
     stripe_logo,
     razorpay_logo,
+    contact_img,
+    about_img
 }
 
 
