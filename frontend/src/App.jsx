@@ -12,15 +12,23 @@ import Navbar from "./components/navbar"
 import Footer from "./components/Footer"
 import SearchBar from "./components/SearchBar"
 
-import React from 'react';
 
-  import { ToastContainer, toast } from 'react-toastify';
+  import { ToastContainer } from 'react-toastify';
 
 
 const App = () => {
   return (
+    <>
+    <ToastContainer position="top-right" 
+  autoClose={3000} 
+  hideProgressBar={false} 
+  newestOnTop={false} 
+  closeOnClick 
+  pauseOnFocusLoss 
+  draggable 
+  pauseOnHover 
+  theme="light"/>
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
-      <ToastContainer/>
       <Navbar/>
       <SearchBar/>
       <Routes>
@@ -36,6 +44,7 @@ const App = () => {
       </Routes>
       <Footer/>
     </div>
+    </>
   )
 }
 

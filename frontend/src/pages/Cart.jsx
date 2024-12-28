@@ -9,19 +9,22 @@ const Cart = () => {
   const [cartData, setCartData] = useState([]);
 
   useEffect(() => {
-    // Process cart items into an array format
-    const tempData = Object.entries(cartItems).flatMap(([productId, sizes]) =>
-      Object.entries(sizes)
-        .filter(([size, quantity]) => quantity > 0) // Only include items with quantity > 0
-        .map(([size, quantity]) => ({
-          _id: productId,
-          size,
-          quantity,
-        }))
-    );
 
-    setCartData(tempData);
-  }, [cartItems]);
+    if(products.length >0){
+      const tempData = Object.entries(cartItems).flatMap(([productId, sizes]) =>
+        Object.entries(sizes)
+          .filter(([size, quantity]) => quantity > 0) // Only include items with quantity > 0
+          .map(([size, quantity]) => ({
+            _id: productId,
+            size,
+            quantity,
+          }))
+      );
+      setCartData(tempData);
+    }
+    // Process cart items into an array format
+
+  }, [cartItems,products]);
 
   return (
     <div className="border-t pt-14">

@@ -1,12 +1,27 @@
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import { ShopContext } from "../context/ShopContext"
 import Title from "../components/Title";
-
+import axios from 'axios'
 const Orders = () => {
 
-  const {products , currency} = useContext(ShopContext);
+  const {backendUrl,token , currency} = useContext(ShopContext);
 
+const[orderData,setOrderData] = useState([]);
+const loadOrderData = async ()=>{
+  try {
+    if(!token){
+      return null
+    }
+    const response = await axios.post('http://loaclhost:4000/api/orders/userOrders',{},{headers:{token}})
+    console.log(response.data)
+  } catch (error) {
+    
+  }
+}
 
+useEffect(()=>{
+  loadOrderData();
+},[token])
 
   return (
     <div className="border-t pt-16">
@@ -17,8 +32,8 @@ const Orders = () => {
 
       <div>
         {
-          products.slice(1,4).map((item,index)=>(
-            <div key={index} className="py-4 border-t border-b text-gray-700 flex flex-col md:flex-row md:items-center md:justify-center md:justify-between gap-4">
+          orderData.map((item,index)=>(
+            <div key={index} className="py-4 border-t border-b text-gray-700 flex flex-col md:flex-row md:items-center md:justify-center  gap-4">
               <div className="flex items-start text-sm gap-6">
                 <img src={item.image[0]} className="w-16 sm:w-20" alt="" />
                 <div>
