@@ -8,7 +8,7 @@ import Cart from "./pages/Cart"
 import Orders from "./pages/Orders"
 import Login from "./pages/Login"
 import PlaceOrder from "./pages/PlaceOrder"
-import Navbar from "./components/navbar"
+import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import SearchBar from "./components/SearchBar"
 
