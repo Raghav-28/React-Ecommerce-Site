@@ -50,12 +50,12 @@ const Add = ({token}) => {
 
         }
         else{
-          toast.error(response.data.message)
+          alert(response.data.message)
         }
 
       } catch (error) {
           console.log(error)
-          toast.error(error.message)
+          alert(error.message)
       }
     }
 
